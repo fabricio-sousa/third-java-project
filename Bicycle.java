@@ -21,7 +21,6 @@ class Bicycle {
         System.out.println("Color: " + this.color);
         System.out.println("Distance: " + this.distance + "km.");
         System.out.println("-----------------");
-        this.run(10);
         
       }
       

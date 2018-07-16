@@ -1,8 +1,9 @@
 class Bicycle {
     private String name;
     private String color;
+    private int distance = 0;
 
-    Bicycle(String name, String color) {
+    Bicycle(String name, String color, int distance) {
         this.name = name;
         this.color = color;
     }
@@ -18,6 +19,7 @@ class Bicycle {
         System.out.println("[Bicycle Info]");
         System.out.println("Name: " + this.name);
         System.out.println("Color: " + this.color);
+        System.out.println("Distance: " + this.distance + "km.");
         
       }
 

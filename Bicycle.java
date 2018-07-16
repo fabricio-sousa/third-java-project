@@ -3,7 +3,7 @@ class Bicycle {
     private String color;
     private int distance = 0;
 
-    Bicycle(String name, String color, int distance) {
+    Bicycle(String name, String color) {
         this.name = name;
         this.color = color;
     }

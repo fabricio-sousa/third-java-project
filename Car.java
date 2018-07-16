@@ -2,8 +2,9 @@ class Car {
     private String name;
     private String color;
     private int distance = 0;
+    private int fuel = 100;
 
-    Car(String name, String color, int distance) {
+    Car(String name, String color) {
         this.name = name;
         this.color = color;
     }
@@ -19,7 +20,8 @@ class Car {
         System.out.println("[Car Info]");
         System.out.println("Name: " + this.name);
         System.out.println("Color: " + this.color);
-        System.out.println("Distance: " + this.distance + "km.");
+        System.out.println("Distance: " + this.distance + "km");
+        System.out.println("Fuel: " + this.fuel + "L");
         System.out.println("-----------------");
         
       }

@@ -7,14 +7,14 @@ class Main {
       
         Scanner scanner = new Scanner(System.in);
         
-        Bicycle Bicycle = new Bicycle("Bianchi", "Green", 0);
+        Bicycle Bicycle = new Bicycle("Bianchi", "Green");
         Bicycle.printData();
         System.out.print("Enter distance to move: ");
         int bikemove = scanner.nextInt();
         Bicycle.run(bikemove);
         System.out.println("=================");
 
-        Car Car = new Car("Ferrari", "Red", 0);
+        Car Car = new Car("Ferrari", "Red");
         Car.printData();
         System.out.print("Enter distance to move: ");
         int carmove = scanner.nextInt();

@@ -20,7 +20,15 @@ class Bicycle {
         System.out.println("Name: " + this.name);
         System.out.println("Color: " + this.color);
         System.out.println("Distance: " + this.distance + "km.");
+        System.out.println("-----------------");
+        this.run(10);
         
       }
+      
+    public void run(int moved) {
+      System.out.println("Moving " + moved + "km ...");
+      this.distance = this.distance + moved;
+      System.out.println("Distance: " + this.distance + "km");
+    }
 
 }

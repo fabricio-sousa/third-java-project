@@ -37,4 +37,19 @@ class Car {
       System.out.println("Distance: " + this.distance + "km");
       System.out.println("Fuel: " + this.fuel + "L");
     }
+    
+    public void charge(int refuel) {
+      System.out.println("Adding " + refuel + "L ...");
+      if (refuel <= 0) {
+        System.out.println("No fuel added");
+      }
+      else if (this.fuel + refuel >= 100) {
+        System.out.println("Tank now full");
+        this.fuel = 100;
+      }
+      else {
+        this.fuel = this.fuel + refuel;
+      }
+      System.out.println("Fuel: " + this.fuel + "L");
+    }
 }

@@ -19,5 +19,9 @@ class Main {
         System.out.print("Enter distance to move: ");
         int toMove = scanner.nextInt();
         Car.run(toMove);
+        System.out.println("-----------------");
+        System.out.print("Enter amount to refuel: ");
+        int refuel = scanner.nextInt();
+        Car.charge(refuel);
     }
 }

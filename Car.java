@@ -26,10 +26,15 @@ class Car {
         
       }
       
-    public void run(int moved) {
-      System.out.println("Moving " + moved + "km ...");
-      this.distance = this.distance + moved;
+    public void run(int toMove) {
+      System.out.println("Moving " + toMove + "km ...");
+      if (toMove <= this.fuel) {
+        this.distance = this.distance + toMove;
+        this.fuel = this.fuel - toMove;
+      } else {
+        System.out.println("Not enough fuel");
+      }
       System.out.println("Distance: " + this.distance + "km");
+      System.out.println("Fuel: " + this.fuel + "L");
     }
-
 }

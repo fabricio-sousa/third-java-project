@@ -17,8 +17,7 @@ class Main {
         Car Car = new Car("Ferrari", "Red");
         Car.printData();
         System.out.print("Enter distance to move: ");
-        int carmove = scanner.nextInt();
-        Car.run(carmove);
-
+        int toMove = scanner.nextInt();
+        Car.run(toMove);
     }
 }
